@@ -1,0 +1,5 @@
+Options FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^s([^-]*)$ index.php?url=$1
